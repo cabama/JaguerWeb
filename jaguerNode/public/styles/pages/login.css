@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	height: 100vh;
+}
+
+video {
+	/* Le ponemos tamaños minimos e independiente de scroll*/
+	position: fixed;
+	min-width: 100%;
+	min-height: 100%;
+	/* Para centrar el video*/
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	/* Para que el video este por detras, cuanto mayor sea zindex mas delante*/
+	z-index: -1;
+}
+
+
+/* De aqui para abajo son estilos para el formulario */
+
+form {
+	/* Ponemos el formulario en el centro */
+	margin: auto;
+	width: 50%;
+	max-width: 500px;
+	/* Color de Fondo*/
+	background: rgba(44, 62, 80, 0.75);
+	/* Le damos bordes y dejamos un margen interno */
+	padding: 30px;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 5px;
+}
+
+
+h2 {
+
+	text-align: center;
+	margin-bottom: 20px;
+	color: rgba(255,255,255,0.8);
+}
+
+input {
+	display: block;
+	padding: 10px;
+	width: 100%;
+	margin: 30px 0;
+	font-size: 20px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #FFF; 
+    background: #27ae60;
+    opacity: 0.85;
+}
+
+
+input[type="submit"]:hover {
+	opacity: 1;
+}
+
+
+input[type="submit"]:active {
+	transform: scale(0.9);
+}

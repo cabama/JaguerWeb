@@ -1,0 +1,31 @@
+{
+  "name": "test",
+  "version": "0.0.1",
+  "description": "Este es un proyecto de prueba de nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "grunt": "grunt"
+  },
+  "author": "Carlos Barreiro Mata",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.4.2",
+    "express": "^4.14.0",
+    "jwt-simple": "^0.5.1",
+    "m": "^1.3.1",
+    "moment": "^2.18.1",
+    "mongoose": "^4.11.7"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-ts": "^6.0.0-beta.16",
+    "nodemon": "^1.11.0"
+  }
+}

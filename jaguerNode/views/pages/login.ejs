@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es_ES">
+
+
+<head>
+	<meta charset="UTF-8">
+	<title>Guapitos C.F.</title>
+	<link rel="stylesheet" href="styles/pages/login.css">
+</head>
+
+
+
+<body ng-app>
+
+	<!-- Dependencias -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/pages/login.js"></script>
+
+	
+	<!-- Ponemos el video de fondo -->
+	<video src="videos/guapitosStadium.mp4" autoplay loop muted></video>
+
+	<!-- Formulario del Login -->
+	<form action="/login" name="login" method="post">
+		<h2><%= cosa %></h2>
+
+		<input id="user" type="text" placeholder="&#128566; Usuario" name="usuario" ng-model="usuario.nick" required>
+		<input id="pass" type="password" placeholder="&#128273; Contraseña" name="pass" ng-model="usuario.pass" required>
+		<input id="ingresar" type="submit" value="Ingresar">
+	</form>
+
+</body>
+</html>
