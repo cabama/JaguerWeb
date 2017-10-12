@@ -1,3 +1,19 @@
-<h1>
-  {{title}}
-</h1>
+
+<div *ngIf="identity" class="logueado">
+	<p>Estas logueado en la aplicacion.</p>	
+</div>
+
+<div *ngIf="!identity" class="noLogueado">
+
+	<h1>No estas logueado en la aplicación.</h1>
+
+	<form #loginForm="ngForm"  (ngSubmit)="onSubmit()">
+		<label for="">Introduzca nombre de usuario:</label>
+		<input type="email" #userName="ngModel" name="userName" [(ngModel)]="user.userName" class="" required/>
+		<span *ngIf="!userName.valid && userName.touched">El email es obligatorio.</span>
+		<label for="">Introduzca contraseña:</label>
+		<input type="text" #password="ngModel" name="password" [(ngModel)]="user.password" class="" required/>
+		<input type="submit" value="entrar">
+	</form>
+
+</div>
